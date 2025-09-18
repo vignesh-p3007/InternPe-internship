@@ -35,15 +35,15 @@ The computer player should use the **Minimax algorithm** to make optimal moves.
 ## 📂 Project Structure
 
 Week2_TicTacToe/    
-├── solution/   
-│ ├── static/   
-│ │ ├── script.js # Game logic (PvP + AI + styling) 
-│ │ └── style.css # Styling 
-│ ├── templates/    
-│ │ └── index.html # Game UI    
-│ └── app.py # Flask backend (optional) 
-├── Task_Description.md # Task overview 
-└── Notes.md # Developer notes  
+├── solution/       
+│ ├── static/       
+│ │ ├── script.js # Game logic (PvP + AI + styling)     
+│ │ └── style.css # Styling     
+│ ├── templates/        
+│ │ └── index.html # Game UI        
+│ └── app.py # Flask backend (optional)     
+├── Task_Description.md # Task overview     
+└── Notes.md # Developer notes      
 
 ---
 
