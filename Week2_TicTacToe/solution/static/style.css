@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.5);
+    width: 400px;
+    max-width: 95%;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00ffea;
+    text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ffdf6c;
+    text-shadow: 0 0 6px rgba(255, 223, 108, 0.8);
+}
+
+/* Mode select */
+.mode-select {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.mode-select label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #00ffea;
+    text-shadow: 0 0 8px #00ffea;
+}
+
+.cell:hover {
+    background: rgba(0, 255, 234, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 255, 234, 0.6);
+}
+
+/* Different colors for X and O */
+.cell.x {
+    color: #679af1;  /* Red for X */
+    font-weight: bold;
+}
+
+.cell.o {
+    color: #d6e46e;  /* Dark Blue for O */
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    padding: 10px 18px;
+    margin: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00ffea, #007f73);
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 255, 234, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 255, 234, 0.6);
+}
+
+/* Message */
+#message {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffdf6c;
+    text-shadow: 0 0 6px rgba(255, 223, 108, 0.8);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+footer a {
+    color: #00ffea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

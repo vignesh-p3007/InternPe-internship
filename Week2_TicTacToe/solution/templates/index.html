@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <span id="scoreX">X: 0</span>
+            <span id="scoreO">O: 0</span>
+            <span id="scoreDraw">Draws: 0</span>
+        </div>
+
+        <div class="mode-select">
+            <label>
+                <input type="radio" name="mode" value="pvp" checked> Player vs Player
+            </label>
+            <label>
+                <input type="radio" name="mode" value="pvc"> Player vs Computer
+            </label>
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div id="message"></div>
+        <button onclick="restartGame()">Restart Game</button>
+        <button onclick="resetScores()">Reset Scoreboard</button>
+    </div>
+
+    
+    <footer>
+        <p>Developed by <a href="https://www.linkedin.com/in/vignesh-p3007" target="_blank">Vignesh Poojari</a></p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
